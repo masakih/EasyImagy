@@ -9,7 +9,7 @@ public enum CGContextCoordinates {
 
 extension Image where Pixel == RGBA<UInt8> {
     private static var colorSpace: CGColorSpace {
-        return CGColorSpaceCreateDeviceRGB()
+        return CGColorSpace(name: CGColorSpace.sRGB) ?? CGColorSpaceCreateDeviceRGB()
     }
     
     private static var bitmapInfo: CGBitmapInfo {
@@ -62,7 +62,7 @@ extension Image where Pixel == RGBA<UInt8> {
 
 extension Image where Pixel == RGBA<UInt16> {
     private static var colorSpace: CGColorSpace {
-        return CGColorSpaceCreateDeviceRGB()
+        return CGColorSpace(name: CGColorSpace.sRGB) ?? CGColorSpaceCreateDeviceRGB()
     }
     
     private static var bitmapInfo: CGBitmapInfo {
@@ -115,7 +115,7 @@ extension Image where Pixel == RGBA<UInt16> {
 
 extension Image where Pixel == RGBA<Float> {
     private static var colorSpace: CGColorSpace {
-        return CGColorSpaceCreateDeviceRGB()
+        return CGColorSpace(name: CGColorSpace.sRGB) ?? CGColorSpaceCreateDeviceRGB()
     }
     
     private static var bitmapInfo: CGBitmapInfo {
@@ -159,7 +159,7 @@ extension Image where Pixel == RGBA<Float> {
 
 extension Image where Pixel == RGBA<Double> {
     private static var colorSpace: CGColorSpace {
-        return CGColorSpaceCreateDeviceRGB()
+        return CGColorSpace(name: CGColorSpace.sRGB) ?? CGColorSpaceCreateDeviceRGB()
     }
     
     private static var bitmapInfo: CGBitmapInfo {
@@ -203,7 +203,7 @@ extension Image where Pixel == RGBA<Double> {
 
 extension Image where Pixel == RGBA<Bool> {
     private static var colorSpace: CGColorSpace {
-        return CGColorSpaceCreateDeviceRGB()
+        return CGColorSpace(name: CGColorSpace.sRGB) ?? CGColorSpaceCreateDeviceRGB()
     }
     
     private static var bitmapInfo: CGBitmapInfo {
@@ -247,7 +247,7 @@ extension Image where Pixel == RGBA<Bool> {
 
 extension Image where Pixel == PremultipliedRGBA<UInt8> {
     fileprivate static var colorSpace: CGColorSpace {
-        return CGColorSpaceCreateDeviceRGB()
+        return CGColorSpace(name: CGColorSpace.sRGB) ?? CGColorSpaceCreateDeviceRGB()
     }
     
     fileprivate static var bitmapInfo: CGBitmapInfo {
@@ -327,7 +327,7 @@ extension Image where Pixel == PremultipliedRGBA<UInt8> {
 
 extension Image where Pixel == PremultipliedRGBA<UInt16> {
     fileprivate static var colorSpace: CGColorSpace {
-        return CGColorSpaceCreateDeviceRGB()
+        return CGColorSpace(name: CGColorSpace.sRGB) ?? CGColorSpaceCreateDeviceRGB()
     }
     
     fileprivate static var bitmapInfo: CGBitmapInfo {
@@ -407,7 +407,7 @@ extension Image where Pixel == PremultipliedRGBA<UInt16> {
 
 extension Image where Pixel == PremultipliedRGBA<Float> {
     private static var colorSpace: CGColorSpace {
-        return CGColorSpaceCreateDeviceRGB()
+        return CGColorSpace(name: CGColorSpace.sRGB) ?? CGColorSpaceCreateDeviceRGB()
     }
     
     private static var bitmapInfo: CGBitmapInfo {
@@ -445,7 +445,7 @@ extension Image where Pixel == PremultipliedRGBA<Float> {
 
 extension Image where Pixel == PremultipliedRGBA<Double> {
     private static var colorSpace: CGColorSpace {
-        return CGColorSpaceCreateDeviceRGB()
+        return CGColorSpace(name: CGColorSpace.sRGB) ?? CGColorSpaceCreateDeviceRGB()
     }
     
     private static var bitmapInfo: CGBitmapInfo {
